@@ -1,0 +1,138 @@
+/* Default Theme (Light Mode) */
+:root {
+    --background-color: #f0f8ff;
+    --text-color: #333;
+    --header-background: #1e90ff;
+    --button-background: #4682b4;
+    --button-hover: #5b9bd5;
+}
+
+/* Dark Theme */
+body.dark {
+    --background-color: #121212;
+    --text-color: #f0f8ff;
+    --header-background: #0b3d91;
+    --button-background: #104e8b;
+    --button-hover: #1c6ba0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+header {
+    background: var(--header-background);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: var(--button-background);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+footer {
+    background: var(--header-background);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--button-background);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover);
+}
